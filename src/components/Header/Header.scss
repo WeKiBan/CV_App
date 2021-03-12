@@ -1,0 +1,19 @@
+@import '../../scssVariable.scss';
+
+.header {
+  background: $mainBGColor;
+  color: $neutralColor;
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  display: inline;
+  font-family: $secondaryFont;
+  font-weight: 400;
+}
+.icon {
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  color: $accentColor
+}
