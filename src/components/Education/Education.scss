@@ -1,1 +1,11 @@
 @import '../../scssVariable.scss';
+
+.add-button {
+  background: none;
+  border: none;
+  color: $neutralColor;
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}

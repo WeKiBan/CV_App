@@ -1,0 +1,131 @@
+@import './scssVariable.scss';
+
+body {
+  font-family: $mainFont;
+  font-weight: 400;
+  background: rgb(78, 78, 78);
+  padding-top: 8rem;
+}
+
+input,
+button,
+textarea {
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0px 3px $accentColor;
+  }
+}
+input,
+textarea {
+  font-size: 1.5rem;
+  font-family: $mainFont;
+}
+
+input {
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  padding-left: 1rem;
+  max-width: 600px;
+}
+
+.line {
+  margin: 2rem;
+  border: 1px $accentColor solid;
+  opacity: 0.5;
+}
+
+.input-full-width {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.text-area {
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-family: $mainFont;
+  max-width: 600px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+// go to one row when the screen is smaller
+@media only screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section {
+  background: $mainBGColor;
+  margin: 2rem auto;
+  text-align: center;
+  color: $neutralColor;
+  font-family: $secondaryFont;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: $secondaryFont;
+  margin-bottom: 1rem;
+}
+
+// add segment button
+.add-button {
+  background: none;
+  border: none;
+  color: $neutralColor;
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 1.7rem;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.remove-button {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+// styling on message to display when there are no segments to display
+.empty-message {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  opacity: 0.6;
+}
+
+// When printing hide elements with this class
+// Hide edges of page so you cant see url and page numbers
+
+@media print {
+  .no-print {
+    display: none;
+  }
+  body {
+    padding-top: 0;
+  }
+  @page {
+    size: auto;
+    margin: 0mm;
+  }
+}
