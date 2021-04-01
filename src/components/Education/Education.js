@@ -4,13 +4,18 @@ import EducationSegment from '../EducationSegment/EducationSegment';
 import { v4 } from 'uuid';
 import React from 'react';
 
-function Education({ education, setEducation }) {
+function Education({ education, setEducation, addEducationSegment }) {
+  const handleAddSegment = (e) => {
+    e.preventDefault();
+    addEducationSegment();
+  };
   return (
     <section className="section">
       <ReactTooltip />
       <form className="form">
         <h2 className="title">Education</h2>
         <button
+          onClick={handleAddSegment}
           data-effect="solid"
           data-place="left"
           data-tip="Add Education"
