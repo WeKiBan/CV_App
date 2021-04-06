@@ -6,10 +6,13 @@ import Summary from './components/Summary/Summary';
 import Experience from './components/Experience/Experience';
 import GeneralInfo from './components/GeneralInfo/GeneralInfo';
 import Education from './components/Education/Education';
+import CvPreview from './components/CvPreview/CvPreview';
+import blankProfileImg from './blank_profile.png';
+import myPortrait from '/Users/wesbanyard/Workspace/cv_app/src/my_portrait.jpg';
 
 function App() {
   // switch between edit mode and preview
-  const [editModeActive, setEditModeActive] = useState(true);
+  const [editModeActive, setEditModeActive] = useState(false);
 
   const handleSetEditMode = () => {
     setEditModeActive(!editModeActive);
@@ -17,33 +20,35 @@ function App() {
 
   // general info section
   const [generalInfo, setGeneralInfo] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    address: '',
-    photo: '',
+    name: 'Wesley Banyard',
+    phone: '077155117711',
+    email: 'Wes.Banyard@gmail.com',
+    address: '33 Snowshill Close, Redditch, B988RG',
+    photo: myPortrait,
   });
 
   // summary section
-  const [summary, setSummary] = useState('');
+  const [summary, setSummary] = useState(
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt excepturi perferendis nesciunt quo amet dolor dolores hic, voluptatum consectetur veniam illum necessitatibus reprehenderit culpa atque ad voluptas modi officiis officia eos ipsam voluptatem fugiat voluptates suscipit. Ratione atque cum quos dolore sapiente velit fuga necessitatibus corrupti voluptatibus cumque, minima doloremque maxime eius quod omnis provident fugiat facilis nobis est reprehenderit.'
+  );
 
   // Education section
   const [education, setEducation] = useState([
     {
       school: 'Saint Augustines',
       location: 'Redditch',
-      from: '10th may 1998',
-      to: '4th July 2004',
-      qualification: 'GCSE',
-      achievements: "2 A's, 4 B's, 2 C's and a D",
+      from: '2004',
+      to: '2008',
+      qualification: "GCSE's",
+      achievements: "2 A's 5 B's, 2 C's",
     },
     {
-      school: 'Saint Augustines',
-      location: 'Redditch',
-      from: '10th may 1998',
-      to: '4th July 2004',
-      qualification: 'GCSE',
-      achievements: "2 A's, 4 B's, 2 C's and a D",
+      school: 'New College',
+      location: 'Bromsgrove',
+      from: '2008',
+      to: '2010',
+      qualification: 'HND Media',
+      achievements: 'Merit',
     },
   ]);
 
@@ -68,12 +73,12 @@ function App() {
   // Experience section
   const [experience, setExperience] = useState([
     {
-      company: 'BW Hotels',
-      location: 'Milan',
-      from: '10th July 2020',
-      to: 'Present',
-      role: 'Reservations Agent',
-      description: 'Making bookings for hotels in the uk',
+      company: '',
+      location: '',
+      from: '',
+      to: '',
+      role: '',
+      description: '',
     },
   ]);
 
@@ -111,6 +116,7 @@ function App() {
       {editModeActive ? (
         <div>
           <GeneralInfo
+            blankProfileImg={blankProfileImg}
             setGeneralInfo={setGeneralInfo}
             generalInfo={generalInfo}
           />
@@ -127,7 +133,13 @@ function App() {
           />
         </div>
       ) : (
-        <p>hello</p>
+        <CvPreview
+          blankProfileImg={blankProfileImg}
+          generalInfo={generalInfo}
+          summary={summary}
+          education={education}
+          experience={experience}
+        />
       )}
 
       <button onClick={() => handlePrint()}>Print this out!</button>

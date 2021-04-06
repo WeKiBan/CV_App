@@ -1,0 +1,13 @@
+@import '../../scssVariable.scss';
+
+.cv-preview-container {
+  width: 595px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin: 0 auto;
+  margin-top: 3rem;
+  min-height: 842px;
+  font-size: 1.3rem;
+  color: #333333;
+}

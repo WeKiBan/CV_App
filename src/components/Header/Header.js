@@ -4,7 +4,7 @@ import ReactTooltip from 'react-tooltip';
 
 export default function Header({ handleSetEditMode, editModeActive }) {
   return (
-    <header className="header show-bottom-border">
+    <header className="header">
       <ReactTooltip />
       <h1 className="heading-title">CV Builder</h1>
       <i className="cv-icon far fa-file-alt"></i>

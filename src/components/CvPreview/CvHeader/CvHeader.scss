@@ -1,0 +1,42 @@
+@import '../../../scssVariable.scss';
+
+.cv-header {
+  width: 100%;
+  background: $accentColor;
+  color: white;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.info-icon {
+  margin-right: 0.5rem;
+}
+
+.img-name-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  .name {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+  img {
+    filter: sepia(0.1);
+    opacity: 0.9;
+  }
+}
+
+.header-profile-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.general-info-container {
+  text-align: right;
+}
