@@ -10,7 +10,7 @@ import blankProfileImg from './blank_profile.png';
 
 function App() {
   // switch between edit mode and preview
-  const [editModeActive, setEditModeActive] = useState(false);
+  const [editModeActive, setEditModeActive] = useState(true);
 
   const handleSetEditMode = () => {
     setEditModeActive(!editModeActive);
