@@ -7,7 +7,6 @@ import GeneralInfo from './components/GeneralInfo/GeneralInfo';
 import Education from './components/Education/Education';
 import CvPreview from './components/CvPreview/CvPreview';
 import blankProfileImg from './blank_profile.png';
-import myPortrait from '/Users/wesbanyard/Workspace/cv_app/src/my_portrait.jpg';
 
 function App() {
   // switch between edit mode and preview
@@ -19,43 +18,25 @@ function App() {
 
   // general info section
   const [generalInfo, setGeneralInfo] = useState({
-    name: 'Wesley Banyard',
-    phone: '077155117711',
-    email: 'Wes.Banyard@gmail.com',
-    address: '33 Snowshill Close, Redditch, B988RG',
-    photo: myPortrait,
+    name: '',
+    phone: '',
+    email: '',
+    address: '',
+    photo: '',
   });
 
   // summary section
-  const [summary, setSummary] = useState(
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt excepturi perferendis nesciunt quo amet dolor dolores hic, voluptatum consectetur veniam illum necessitatibus reprehenderit culpa atque ad voluptas modi officiis officia eos ipsam voluptatem fugiat voluptates suscipit. Ratione atque cum quos dolore sapiente velit fuga necessitatibus corrupti voluptatibus cumque, minima doloremque maxime eius quod omnis provident fugiat facilis nobis est reprehenderit.'
-  );
+  const [summary, setSummary] = useState('');
 
   // Education section
   const [education, setEducation] = useState([
     {
-      school: 'Saint Augustines',
-      location: 'Redditch',
-      from: '2004',
-      to: '2008',
-      qualification: "GCSE's",
-      achievements: "2 A's 5 B's, 2 C's",
-    },
-    {
-      school: 'New College',
-      location: 'Bromsgrove',
-      from: '2008',
-      to: '2010',
-      qualification: 'HND Media',
-      achievements: 'Merit',
-    },
-    {
-      school: 'Worcester University',
-      location: 'Worcester',
-      from: '2010',
-      to: '2012',
-      qualification: 'BA Creative Digital Media',
-      achievements: '2:1',
+      school: '',
+      location: '',
+      from: '',
+      to: '',
+      qualification: '',
+      achievements: '',
     },
   ]);
 
@@ -80,40 +61,12 @@ function App() {
   // Experience section
   const [experience, setExperience] = useState([
     {
-      company: 'Best Western Hotel Group',
-      location: 'Milan',
-      from: '2019',
-      to: '2021',
-      role: 'Reservations Agent',
-      description:
-        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam odio provident quos tenetur, cumque veniam sequi atque, laborum expedita sunt! Quia aliquid molestiae, accusantium iste impedit magnam architecto ducimus, est sed esse eum quas ut. ',
-    },
-    {
-      company: 'Jewellery Maker',
-      location: 'Worcestershire',
-      from: '2016',
-      to: '2020',
-      role: 'Assistant Director',
-      description:
-        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam odio provident quos tenetur, cumque veniam sequi atque, laborum expedita sunt! Quia aliquid molestiae, accusantium iste impedit magnam architecto ducimus, est sed esse eum quas ut. ',
-    },
-    {
-      company: 'Jewellery Maker',
-      location: 'Worcestershire',
-      from: '2016',
-      to: '2020',
-      role: 'Assistant Director',
-      description:
-        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam odio provident quos tenetur, cumque veniam sequi atque, laborum expedita sunt! Quia aliquid molestiae, accusantium iste impedit magnam ',
-    },
-    {
-      company: 'Jewellery Maker',
-      location: 'Worcestershire',
-      from: '2016',
-      to: '2020',
-      role: 'Assistant Director',
-      description:
-        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam odio provident quos tenetur, cumque veniam sequi atque, laborum expedita sunt! Quia aliquid molestiae, accusantium iste impedit magnam architecto ducimus, est sed esse eum quas ut. ',
+      company: '',
+      location: '',
+      from: '',
+      to: '',
+      role: '',
+      description: '',
     },
   ]);
 
