@@ -19,7 +19,8 @@ function ExperienceSegment({
     });
 
     let dupExperience = [...experience];
-    dupExperience[index] = info;
+    dupExperience[index][key] = val;
+    setExperience(dupExperience);
   };
 
   const handleRemoveSegment = () => {

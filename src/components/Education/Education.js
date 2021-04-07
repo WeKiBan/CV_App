@@ -1,7 +1,6 @@
 import './Education.scss';
 import ReactTooltip from 'react-tooltip';
 import EducationSegment from '../EducationSegment/EducationSegment';
-import { v4 } from 'uuid';
 import React from 'react';
 
 function Education({ education, setEducation, addEducationSegment }) {
@@ -34,7 +33,7 @@ function Education({ education, setEducation, addEducationSegment }) {
             education.map((educationItem, index) => {
               return (
                 <EducationSegment
-                  key={v4()}
+                  key={index}
                   education={education}
                   setEducation={setEducation}
                   educationItem={educationItem}

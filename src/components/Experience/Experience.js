@@ -1,6 +1,5 @@
 import './Experience.scss';
 import ReactTooltip from 'react-tooltip';
-import { v4 } from 'uuid';
 import ExperienceSegment from '../ExperienceSegment/ExperienceSegment';
 
 import React from 'react';
@@ -35,7 +34,7 @@ function Experience({ experience, setExperience, addExperienceSegment }) {
             experience.map((experienceItem, index) => {
               return (
                 <ExperienceSegment
-                  key={v4()}
+                  key={index}
                   experience={experience}
                   setExperience={setExperience}
                   experienceItem={experienceItem}

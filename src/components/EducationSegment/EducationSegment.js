@@ -14,7 +14,8 @@ function EducationSegment({ educationItem, index, education, setEducation }) {
     });
 
     let dupEducation = [...education];
-    dupEducation[index] = info;
+    dupEducation[index][key] = val;
+    setEducation(dupEducation);
   };
 
   const handleRemoveSegment = () => {
@@ -28,7 +29,7 @@ function EducationSegment({ educationItem, index, education, setEducation }) {
       <div className="grid">
         <input
           value={info.school}
-          onChange={(e) => handleSetInfo(e)}
+          onChange={handleSetInfo}
           name="school"
           type="text"
           placeholder="University/School Name"
@@ -71,10 +72,7 @@ function EducationSegment({ educationItem, index, education, setEducation }) {
         className="text-area"
         placeholder="List achievements and further information here....."
       />
-      <button
-        className="input-button"
-        onClick={handleRemoveSegment}
-      >
+      <button className="input-button" onClick={handleRemoveSegment}>
         Delete <i className="fas fa-trash-alt"></i>
       </button>
       <hr className="line" />
