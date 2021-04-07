@@ -11,6 +11,7 @@ function CvPreview({
   blankProfileImg,
   education,
   experience,
+  handlePrint,
 }) {
   return (
     <div className="cv-preview-container">

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Summary.scss';
+import Textarea from 'react-flexi-textarea';
 
 function Summary({ summary, setSummary }) {
   const handleSetSummary = (e) => {
@@ -10,14 +11,14 @@ function Summary({ summary, setSummary }) {
     <section className="section">
       <h2 className="title">Summary</h2>
       <div role="textbox">
-        <textarea
+        <Textarea
+          data-autogrow
           value={summary}
           onChange={handleSetSummary}
-          data-autogrow
           name="summary"
           className="text-area"
           placeholder="Write your summary here....."
-        ></textarea>
+        ></Textarea>
       </div>
     </section>
   );

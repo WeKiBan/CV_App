@@ -65,17 +65,19 @@ input {
 }
 
 .section {
-  background: $mainBGColor;
-  margin: 2rem auto;
+  background: $sectionColor;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
   text-align: center;
-  color: $neutralColor;
+  color: white;
   font-family: $secondaryFont;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   padding: 1rem;
   position: relative;
   width: 80%;
   max-width: 700px;
   min-width: 300px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .title {
@@ -84,17 +86,47 @@ input {
   margin-bottom: 1rem;
 }
 
+.input-button {
+  display: inline-block;
+  background: $neutralColor;
+  padding: 1rem;
+  color: rgba(0, 0, 0, 0.541);
+  border-radius: 5px;
+  font-size: 1.4rem;
+  width: 100%;
+  margin: 1rem 0;
+  max-width: 600px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 .cv-segment {
-  margin: 2rem 4rem;
+  margin: 5rem 4rem;
   i {
     color: $accentColor;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
   }
   hr {
     background-color: $accentColor;
     height: 1px;
     border: 0;
+    margin-bottom: 2rem;
   }
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.green {
+  color: rgb(0, 102, 85);
 }
 
 // add segment button
@@ -110,15 +142,6 @@ input {
   &:hover {
     opacity: 0.5;
   }
-}
-
-.remove-button {
-  display: inline-block;
-  width: 100%;
-  max-width: 500px;
-  padding: 1rem;
-  margin-top: 1rem;
-  cursor: pointer;
 }
 
 // styling on message to display when there are no segments to display
@@ -144,14 +167,24 @@ input {
   html {
     font-size: 13px;
   }
+  p {
+    break-inside: avoid;
+  }
 
   .cv-preview-container {
+    zoom: 1;
+    width: 585px;
     padding: 0;
     margin: 0;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    box-shadow: none;
+  }
+
+  .no-break {
+    break-inside: avoid;
   }
 
   .cv-preview-container,
@@ -160,7 +193,16 @@ input {
   }
 
   @page {
-    size: auto;
-    margin: 0mm;
+    size: A4;
+    margin: 2rem 2rem 0 2rem;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 500px) {
+  body {
+    padding-top: 10rem;
   }
 }

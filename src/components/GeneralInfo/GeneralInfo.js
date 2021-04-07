@@ -18,7 +18,7 @@ function GeneralInfo({ generalInfo, setGeneralInfo, blankProfileImg }) {
 
   return (
     <>
-      <section className="section">
+      <section className="section general-info">
         <form>
           <h2 className="title">General Info</h2>
           <div className="grid">
@@ -56,7 +56,7 @@ function GeneralInfo({ generalInfo, setGeneralInfo, blankProfileImg }) {
             />
           </div>
 
-          <label className="upload-button">
+          <label className="input-button">
             <i className="fa fa-image"></i>
             {generalInfo.photo ? ' Change Photo' : ' Upload A Photo'}
             <input
@@ -74,7 +74,6 @@ function GeneralInfo({ generalInfo, setGeneralInfo, blankProfileImg }) {
           alt=""
         />
       </section>
-      )
     </>
   );
 }

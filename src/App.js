@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { AutogrowTextarea } from 'autogrow-textarea';
 import './App.css';
 import Header from './components/Header/Header';
 import Summary from './components/Summary/Summary';
@@ -50,6 +49,14 @@ function App() {
       qualification: 'HND Media',
       achievements: 'Merit',
     },
+    {
+      school: 'Worcester University',
+      location: 'Worcester',
+      from: '2010',
+      to: '2012',
+      qualification: 'BA Creative Digital Media',
+      achievements: '2:1',
+    },
   ]);
 
   const addEducationSegment = () => {
@@ -73,12 +80,40 @@ function App() {
   // Experience section
   const [experience, setExperience] = useState([
     {
-      company: '',
-      location: '',
-      from: '',
-      to: '',
-      role: '',
-      description: '',
+      company: 'Best Western Hotel Group',
+      location: 'Milan',
+      from: '2019',
+      to: '2021',
+      role: 'Reservations Agent',
+      description:
+        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam odio provident quos tenetur, cumque veniam sequi atque, laborum expedita sunt! Quia aliquid molestiae, accusantium iste impedit magnam architecto ducimus, est sed esse eum quas ut. ',
+    },
+    {
+      company: 'Jewellery Maker',
+      location: 'Worcestershire',
+      from: '2016',
+      to: '2020',
+      role: 'Assistant Director',
+      description:
+        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam odio provident quos tenetur, cumque veniam sequi atque, laborum expedita sunt! Quia aliquid molestiae, accusantium iste impedit magnam architecto ducimus, est sed esse eum quas ut. ',
+    },
+    {
+      company: 'Jewellery Maker',
+      location: 'Worcestershire',
+      from: '2016',
+      to: '2020',
+      role: 'Assistant Director',
+      description:
+        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam odio provident quos tenetur, cumque veniam sequi atque, laborum expedita sunt! Quia aliquid molestiae, accusantium iste impedit magnam ',
+    },
+    {
+      company: 'Jewellery Maker',
+      location: 'Worcestershire',
+      from: '2016',
+      to: '2020',
+      role: 'Assistant Director',
+      description:
+        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus laboriosam odio provident quos tenetur, cumque veniam sequi atque, laborum expedita sunt! Quia aliquid molestiae, accusantium iste impedit magnam architecto ducimus, est sed esse eum quas ut. ',
     },
   ]);
 
@@ -109,12 +144,13 @@ function App() {
     <>
       <div className="no-print">
         <Header
+          handlePrint={handlePrint}
           editModeActive={editModeActive}
           handleSetEditMode={handleSetEditMode}
         />
       </div>
       {editModeActive ? (
-        <div>
+        <>
           <GeneralInfo
             blankProfileImg={blankProfileImg}
             setGeneralInfo={setGeneralInfo}
@@ -131,7 +167,7 @@ function App() {
             experience={experience}
             setExperience={setExperience}
           />
-        </div>
+        </>
       ) : (
         <CvPreview
           blankProfileImg={blankProfileImg}
@@ -139,10 +175,9 @@ function App() {
           summary={summary}
           education={education}
           experience={experience}
+          handlePrint={handlePrint}
         />
       )}
-
-      <button onClick={() => handlePrint()}>Print this out!</button>
     </>
   );
 }

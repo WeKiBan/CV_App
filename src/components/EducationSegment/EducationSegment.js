@@ -1,5 +1,6 @@
 import './EducationSegment.scss';
 import React, { useState } from 'react';
+import Textarea from 'react-flexi-textarea';
 
 function EducationSegment({ educationItem, index, education, setEducation }) {
   const [info, setInfo] = useState(educationItem);
@@ -62,15 +63,18 @@ function EducationSegment({ educationItem, index, education, setEducation }) {
         type="text"
         placeholder="Degree/Qualification Type"
       />
-      <textarea
+      <Textarea
+        data-autogrow
         value={info.achievements}
         onChange={handleSetInfo}
         name="achievements"
-        data-autogrow
         className="text-area"
         placeholder="List achievements and further information here....."
-      ></textarea>
-      <button className="remove-button" onClick={handleRemoveSegment}>
+      />
+      <button
+        className="input-button"
+        onClick={handleRemoveSegment}
+      >
         Delete <i className="fas fa-trash-alt"></i>
       </button>
       <hr className="line" />

@@ -1,16 +1,20 @@
 @import '../../scssVariable.scss';
 
 .header {
-  background: $mainBGColor;
+  background: $accentColor;
   color: $neutralColor;
-  height: 8rem;
   width: 100%;
   position: fixed;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   top: 0;
   z-index: 1000;
+}
+
+.title-icon-container {
+  padding: 1rem 0;
 }
 
 .heading-title {
@@ -23,22 +27,37 @@
 .cv-icon {
   font-size: 3.5rem;
   margin-left: 1rem;
-  color: $accentColor;
+  color: $mainBGColor;
   padding-bottom: 0.3rem;
 }
 
-.preview {
-  z-index: 1000;
-  cursor: pointer;
-  position: absolute;
-  right: 1rem;
-  height: 3.5rem;
-  padding: 0 1rem;
-  background: $neutralColor;
-  border-radius: 0.5rem;
-  border: 1px solid grey;
-  &:hover {
-    opacity: 0.5;
+.header-buttons {
+  width: 100%;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  background: $mainBGColor;
+  span {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.6;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.buttons {
+  font-size: 3rem;
+  display: flex;
+  bottom: -10rem;
+  right: 3rem;
+  color: $accentColor;
+  span {
+    margin: 0.5rem;
+  }
+  .print-button {
+    left: -1rem;
   }
 }
 

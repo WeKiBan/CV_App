@@ -9,23 +9,18 @@
   border: solid;
 }
 
-.upload-button {
-  display: inline-block;
-  background: $neutralColor;
-  padding: 1rem;
-  color: rgba(0, 0, 0, 0.541);
-  border-radius: 5px;
-  font-size: 1.4rem;
-  width: 100%;
-  margin: 1rem 0;
-  max-width: 600px;
-  cursor: pointer;
-  &:hover {
-    opacity: 0.8;
-  }
-}
-
 .profile-photo {
   width: 40%;
+  max-width: 150px;
   border-radius: 5px;
+}
+
+.general-info {
+  margin-top: 5rem !important;
+}
+
+@media (min-width: 750px) {
+  .general-info {
+    margin-top: 8rem !important;
+  }
 }

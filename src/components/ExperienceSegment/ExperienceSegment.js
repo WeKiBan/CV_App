@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ExperienceSegment.scss';
+import Textarea from 'react-flexi-textarea';
 
 function ExperienceSegment({
   experience,
@@ -66,15 +67,15 @@ function ExperienceSegment({
         type="text"
         placeholder="Role"
       />
-      <textarea
+      <Textarea
         name="description"
         onChange={handleSetInfo}
         value={info.description}
         data-autogrow
         className="text-area"
         placeholder="List Job description, responsibilities, achievements here....."
-      ></textarea>
-      <button className="remove-button" onClick={handleRemoveSegment}>
+      ></Textarea>
+      <button className="input-button" onClick={handleRemoveSegment}>
         Delete <i className="fas fa-trash-alt"></i>
       </button>
       <hr className="line" />

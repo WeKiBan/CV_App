@@ -2,12 +2,37 @@
 
 .cv-preview-container {
   width: 595px;
-  display: flex;
-  flex-direction: column;
   background: white;
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 8rem;
   min-height: 842px;
   font-size: 1.3rem;
   color: #333333;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+// Small devices (landscape phones, 576px and up)
+
+@media screen and (max-width: 650px) {
+  .cv-preview-container {
+    zoom: 0.8;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cv-preview-container {
+    zoom: 0.7;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cv-preview-container {
+    zoom: 0.6;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cv-preview-container {
+    zoom: 0.5;
+  }
 }

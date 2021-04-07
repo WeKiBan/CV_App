@@ -1,1 +1,8 @@
 @import '../../../scssVariable.scss';
+
+.experience-segment {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  grid-gap: 1.5rem;
+  padding-bottom: 3rem;
+}
