@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/CV_APP/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/CV_APP/static/js/main.3ae6851f.chunk.js",
-    "main.js.map": "/CV_APP/static/js/main.3ae6851f.chunk.js.map",
-    "runtime-main.js": "/CV_APP/static/js/runtime-main.19546d7f.js",
-    "runtime-main.js.map": "/CV_APP/static/js/runtime-main.19546d7f.js.map",
-    "static/js/2.cd9f7cdd.chunk.js": "/CV_APP/static/js/2.cd9f7cdd.chunk.js",
-    "static/js/2.cd9f7cdd.chunk.js.map": "/CV_APP/static/js/2.cd9f7cdd.chunk.js.map",
-    "static/js/3.0a981bcc.chunk.js": "/CV_APP/static/js/3.0a981bcc.chunk.js",
-    "static/js/3.0a981bcc.chunk.js.map": "/CV_APP/static/js/3.0a981bcc.chunk.js.map",
+    "main.css": "/CV_APP/static/css/main.00ef1066.chunk.css",
+    "main.js": "/CV_APP/static/js/main.49ee1760.chunk.js",
+    "main.js.map": "/CV_APP/static/js/main.49ee1760.chunk.js.map",
+    "runtime-main.js": "/CV_APP/static/js/runtime-main.b47a5ec4.js",
+    "runtime-main.js.map": "/CV_APP/static/js/runtime-main.b47a5ec4.js.map",
+    "static/css/2.b6c3039c.chunk.css": "/CV_APP/static/css/2.b6c3039c.chunk.css",
+    "static/js/2.156e34f2.chunk.js": "/CV_APP/static/js/2.156e34f2.chunk.js",
+    "static/js/2.156e34f2.chunk.js.map": "/CV_APP/static/js/2.156e34f2.chunk.js.map",
+    "static/js/3.de1916cb.chunk.js": "/CV_APP/static/js/3.de1916cb.chunk.js",
+    "static/js/3.de1916cb.chunk.js.map": "/CV_APP/static/js/3.de1916cb.chunk.js.map",
     "index.html": "/CV_APP/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/CV_APP/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.cd9f7cdd.chunk.js.LICENSE.txt": "/CV_APP/static/js/2.cd9f7cdd.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/CV_APP/static/media/logo.6ce24c58.svg"
+    "static/css/2.b6c3039c.chunk.css.map": "/CV_APP/static/css/2.b6c3039c.chunk.css.map",
+    "static/css/main.00ef1066.chunk.css.map": "/CV_APP/static/css/main.00ef1066.chunk.css.map",
+    "static/js/2.156e34f2.chunk.js.LICENSE.txt": "/CV_APP/static/js/2.156e34f2.chunk.js.LICENSE.txt",
+    "static/media/blank_profile.bb51a363.png": "/CV_APP/static/media/blank_profile.bb51a363.png",
+    "static/media/font-awesome.min.css": "/CV_APP/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/my_portrait.db67d02a.jpg": "/CV_APP/static/media/my_portrait.db67d02a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.19546d7f.js",
-    "static/js/2.cd9f7cdd.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.3ae6851f.chunk.js"
+    "static/js/runtime-main.b47a5ec4.js",
+    "static/css/2.b6c3039c.chunk.css",
+    "static/js/2.156e34f2.chunk.js",
+    "static/css/main.00ef1066.chunk.css",
+    "static/js/main.49ee1760.chunk.js"
   ]
 }
