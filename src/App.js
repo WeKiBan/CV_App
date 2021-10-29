@@ -6,7 +6,7 @@ import Experience from './components/Experience/Experience';
 import GeneralInfo from './components/GeneralInfo/GeneralInfo';
 import Education from './components/Education/Education';
 import CvPreview from './components/CvPreview/CvPreview';
-import blankProfileImg from './blank_profile.png';
+import blankProfileImg from './images/blank_profile.png';
 
 function App() {
   // switch between edit mode and preview

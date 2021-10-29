@@ -21,7 +21,7 @@ function CvEducation({ education }) {
                   <h3>{item.qualification}</h3>
                   <p className="green">{item.school}</p>
                 </div>
-                <p className="center">{item.achievements}</p>
+                <p className="left">{item.achievements}</p>
                 <p className="right">{item.from + ' - ' + item.to}</p>
               </div>
             );
