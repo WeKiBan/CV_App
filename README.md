@@ -42,12 +42,12 @@ And then storing the file location using the useState hook.
 
 ```javascript
 const [generalInfo, setGeneralInfo] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    address: '',
-    photo: '',
-  });
+  name: '',
+  phone: '',
+  email: '',
+  address: '',
+  photo: '',
+});
 
 const handleFileSelectChange = (e) => {
   e.preventDefault();
@@ -60,36 +60,13 @@ const handleFileSelectChange = (e) => {
 
 After inputting their data the user can then click the eye icon in the top right hand corner to go to a preview of their data injected into a formatted Resume.
 
-They also have option to print the resume by clicking the print button located in the top right of the page. I did this using the `window.print()` method and a `@print media` query to only display the required parts of the page.
-
 ![](src/images/previeScreenshot.png)
 
-## Get started
+They also have option to print the resume by clicking the print button located in the top right of the page. I did this using the `window.print()` method and a `@print media` query to only display the required parts of the page.
 
-### Clone this repository
+## Potential future features
 
-From your command line, first clone this repo: https://github.com/WeKiBan/new-portfolio
+- using a Context API global state management solution to keep all of the data in the same place and prevent the need to pass data as props between components.
+- Add a colour picker so that the user can, to some extent, customise the styling of the final CV.
 
-`$ git clone https://github.com/WeKiBan/new-portfolio`
 
-### Go into the repository
-
-`$ cd new-portfolio`
-
-### Remove current origin repository
-
-`$ git remote remove origin`
-
-### Install dependencies
-
-`$ npm install`
-
-### Start development server
-
-`$ npm start`
-
-You should now have a development server running in your default browser.
-
-```
-
-```
