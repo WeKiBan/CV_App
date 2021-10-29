@@ -60,7 +60,7 @@ const handleFileSelectChange = (e) => {
 
 After inputting their data the user can then click the eye icon in the top right hand corner to go to a preview of their data injected into a formatted Resume.
 
-They also have option to print the resume by clicking the print button located in the top right of the page. I did this using the `window.print()` method and a ``@print media` query to only display the required parts of the page.
+They also have option to print the resume by clicking the print button located in the top right of the page. I did this using the `window.print()` method and a `@print media` query to only display the required parts of the page.
 
 ![](src/images/previeScreenshot.png)
 
