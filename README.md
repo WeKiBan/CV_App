@@ -23,6 +23,7 @@ I believe this project has given me a solid grasp of React Hooks and the React f
 ### Features
 
 The User is presented with various segments containing relating inputs and also the option to upload a portrait
+
 ![](src/images/GeneralInfoScreenshot.png)
 
 This is the first time I have included a feature like the portrait upload in one of my apps and this was achieved by using an input type of file.
@@ -37,9 +38,17 @@ This is the first time I have included a feature like the portrait upload in one
 />
 ```
 
-and then storing the file location using rhe useState hook.
+And then storing the file location using the useState hook.
 
 ```javascript
+const [generalInfo, setGeneralInfo] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    address: '',
+    photo: '',
+  });
+
 const handleFileSelectChange = (e) => {
   e.preventDefault();
   setGeneralInfo({
@@ -49,9 +58,9 @@ const handleFileSelectChange = (e) => {
 };
 ```
 
-after inputting their data the user can then click the eye icon in the top right hand corner to go to a preview of their data injected into a formatted Resume.
+After inputting their data the user can then click the eye icon in the top right hand corner to go to a preview of their data injected into a formatted Resume.
 
-They also have option to print the resume by clicking the print button located in the top right of the page. This was achieved by using the `window.print()` method and then using the print media query to only display the required parts of the page.
+They also have option to print the resume by clicking the print button located in the top right of the page. I did this using the `window.print()` method and a ``@print media` query to only display the required parts of the page.
 
 ![](src/images/previeScreenshot.png)
 
