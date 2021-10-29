@@ -64,7 +64,7 @@ After inputting their data the user can then click the eye icon in the top right
 
 They also have option to print the resume by clicking the print button located in the top right of the page. I did this using the `window.print()` method and a `@print media` query to only display the required parts of the page.
 
-## Potential Future Features
+### Potential Future Features
 
 - using a Context API global state management solution to keep all of the data in the same place and prevent the need to pass data as props between components.
 - Add a colour picker so that the user can, to some extent, customise the styling of the final CV.
