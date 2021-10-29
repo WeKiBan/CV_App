@@ -5,7 +5,6 @@ import React from 'react';
 function GeneralInfo({ generalInfo, setGeneralInfo, blankProfileImg }) {
   const handleFileSelectChange = (e) => {
     e.preventDefault();
-    console.log(URL.createObjectURL(e.target.files[0]));
     setGeneralInfo({
       ...generalInfo,
       photo: URL.createObjectURL(e.target.files[0]),
