@@ -66,7 +66,7 @@ They also have option to print the resume by clicking the print button located i
 
 ### Potential Future Features
 
-- using a Context API global state management solution to keep all of the data in the same place and prevent the need to pass data as props between components.
+- Using a Context API global state management solution to keep all of the data in the same place and prevent the need to pass data as props between components.
 - Add a colour picker so that the user can, to some extent, customise the styling of the final CV.
 
 
